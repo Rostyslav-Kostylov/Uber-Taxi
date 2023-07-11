@@ -1,0 +1,1216 @@
+@charset "UTF-8";
+/* line 1, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 4, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+}
+
+/* line 10, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 13, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 16, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 22, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 26, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 29, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 31, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 37, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 41, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 47, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 53, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+/* line 63, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 77, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bg/uber_bg.png") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 81, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 89, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 98, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 105, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 120, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 122, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 127, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 136, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 138, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 143, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 148, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 22px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 161, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 164, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.label_min {
+  width: 76px;
+}
+
+/* line 166, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 177, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 180, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subtitle {
+  position: relative;
+  color: #222;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  z-index: 2;
+}
+
+/* line 187, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 189, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 80px 0;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat;
+}
+
+/* line 193, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 30px;
+}
+
+/* line 195, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 202, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/mobile_app/card_1.png") center center/cover no-repeat;
+}
+
+/* line 204, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/mobile_app/card_2.png") center center/cover no-repeat;
+}
+
+/* line 206, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/mobile_app/card_3.png") center center/cover no-repeat;
+}
+
+/* line 208, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/mobile_app/card_4.png") center center/cover no-repeat;
+}
+
+/* line 210, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/mobile_app/card_5.png") center center/cover no-repeat;
+}
+
+/* line 212, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/mobile_app/card_6.png") center center/cover no-repeat;
+}
+
+/* line 214, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+/* line 221, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_plus {
+  background: url("../img/mobile app/Button.png") center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 100%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* line 237, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s;
+}
+
+/* line 243, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 254, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 256, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 900px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat;
+}
+
+/* line 261, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 266, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 272, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 280, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require {
+  padding: 68px 0 90px 0;
+}
+
+/* line 282, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 284, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 286, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 290, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 294, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 300, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 2px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/galochki/check_blue.png") center center/cover no-repeat;
+}
+
+/* line 309, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require_descr {
+  margin-top: 25px;
+  color: #1CA8C3;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 316, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 320, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/galochki/check_red.png") center center/cover no-repeat;
+}
+
+/* line 324, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.world {
+  min-height: 720px;
+  position: relative;
+  padding: 48px 0;
+  background: url("../img/bg/world_bg.png") center center/cover no-repeat;
+}
+
+/* line 329, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.world_link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 22px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+/* line 340, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.world_link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 344, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 347, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 350, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 355, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 360, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 362, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 365, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 369, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 380, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 383, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 387, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 392, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 396, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 401, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 411, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_mobile {
+  display: flex;
+}
+
+/* line 413, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.footer_mobile_foto {
+  display: block;
+  height: 27px;
+  width: 100px;
+  padding-left: 5px;
+}
+
+/* line 418, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 13, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 17, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+  }
+  /* line 19, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 22px;
+  }
+  /* line 21, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice {
+    padding: 55px 0;
+    min-height: 840px;
+  }
+  /* line 25, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require br {
+    display: none;
+  }
+  /* line 28, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 30, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  /* line 32, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* line 36, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+  }
+  /* line 38, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_mobile a {
+    margin: 0 3px;
+  }
+  /* line 40, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_mobile a img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 46, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 10px;
+  }
+  /* line 48, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 52, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 54, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 56, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 58, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 22px;
+    height: 38px;
+    width: 100%;
+  }
+  /* line 63, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 65, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 68, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 71, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_round {
+    margin-right: 0;
+  }
+  /* line 73, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 77, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .world {
+    min-height: 650px;
+    width: 100vw;
+  }
+  /* line 81, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 83, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 88, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 90, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 95, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  nav {
+    width: 100vw;
+  }
+  /* line 97, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 109, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 111, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px;
+  }
+  /* line 115, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  /* line 118, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 126, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 134, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 136, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 138, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 140, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 142, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 144, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 147, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 155, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 162, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 165, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons {
+    padding: 40px 0;
+  }
+  /* line 167, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 350px;
+  }
+  /* line 169, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_subtitle {
+    text-align: center;
+  }
+  /* line 171, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_text {
+    margin-top: 10px;
+  }
+  /* line 173, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile {
+    padding: 40px 0;
+  }
+  /* line 175, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice {
+    min-height: 600px;
+    padding: 40px 0;
+  }
+  /* line 178, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require {
+    padding: 40px 0;
+  }
+  /* line 180, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .world {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 185, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  nav {
+    height: 30px;
+    width: 100vw;
+  }
+  /* line 188, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 190, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 193, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 195, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 18px;
+  }
+  /* line 197, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 11px;
+  }
+  /* line 202, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  /* line 207, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subheader_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 209, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 92px 0 40px 0;
+  }
+  /* line 212, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 214, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 218, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 32px;
+    padding: 0 12px;
+    line-height: 30px;
+  }
+  /* line 223, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    font-size: 16px;
+  }
+  /* line 228, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .promo_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 230, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 232, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
+  /* line 236, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .menu_link {
+    display: block;
+  }
+  /* line 238, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 240, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_block {
+    margin-top: 24px;
+  }
+  /* line 242, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 245, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 24px;
+  }
+  /* line 248, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+  /* line 251, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 255, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile {
+    padding: 28px 0 43px 0;
+  }
+  /* line 257, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile_row {
+    margin-top: 26px;
+  }
+  /* line 259, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+  }
+  /* line 262, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 18px;
+    padding: 0 32px 0 34px;
+  }
+  /* line 265, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .subtitle {
+    font-size: 14px;
+    margin-top: 9px;
+  }
+  /* line 268, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice {
+    padding: 26px 0 0 0;
+    min-height: 400px;
+  }
+  /* line 271, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice .black {
+    height: 400px;
+  }
+  /* line 273, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice .title {
+    display: none;
+  }
+  /* line 275, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice .subtitle {
+    display: none;
+  }
+  /* line 277, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice_img {
+    width: 300px;
+    height: 190px;
+    margin: 36px auto 0 auto;
+  }
+  /* line 281, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .choice_descr {
+    color: #FFF;
+    font-size: 17px;
+    line-height: 24px;
+    z-index: 2;
+    position: relative;
+    padding: 0 22px;
+  }
+  /* line 288, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require {
+    padding: 24px 0 30px 0;
+  }
+  /* line 290, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require_block {
+    margin: 30px 0 0 0;
+  }
+  /* line 292, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require_title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* line 295, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require_list {
+    margin-top: 6px;
+    padding-left: 32px;
+    margin-bottom: 0;
+  }
+  /* line 299, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require li {
+    font-size: 14px;
+    line-height: normal;
+  }
+  /* line 302, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require li br {
+    display: none;
+  }
+  /* line 304, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require li:last-child {
+    margin-bottom: 0;
+  }
+  /* line 306, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .require_descr {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: normal;
+  }
+  /* line 310, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .world {
+    padding: 26px 0 29px 0;
+    min-height: 360px;
+  }
+  /* line 313, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .world .subtitle {
+    margin-top: 11px;
+  }
+  /* line 315, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .world .world_link {
+    line-height: 15px;
+    min-width: 222px;
+    text-decoration: none;
+  }
+  /* line 319, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  footer {
+    padding: 25px 0 20px 0;
+  }
+  /* line 322, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_divider {
+    width: 253px;
+    margin: 0 auto;
+  }
+  /* line 325, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper {
+    padding-top: 22px;
+  }
+  /* line 327, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-bottom: 20px;
+  }
+  /* line 329, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 331, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 333, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 335, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_links {
+    width: 290px;
+  }
+  /* line 337, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_links_main {
+    padding: 0;
+    font-size: 14px;
+  }
+  /* line 340, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 343, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_links_sub a {
+    margin: 0 7px;
+  }
+  /* line 345, D:/Users/Desktop/Обучение вёрстке/Projects/project 3/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
